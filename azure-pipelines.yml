@@ -1,4 +1,10 @@
 trigger:
+- task: AzureKeyVault@2
+  inputs:
+    azureSubscription: 'Azure subscription 1(9cf78b19-1be9-446e-88e5-c0da0c3bc45d)'
+    KeyVaultName: 'pipelinekeyvaultiztuneed'
+    SecretsFilter: '*'
+    RunAsPreJob: true
 - master
 
 pool:
